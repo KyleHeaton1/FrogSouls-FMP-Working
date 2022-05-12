@@ -10,6 +10,7 @@ public class DamageBox : MonoBehaviour
     Health playerHealth;
     public int damage;
     public float boxTimeRefresh;
+    public GameObject blood;
 
     void OnTriggerEnter(Collider other) 
     {
@@ -59,11 +60,13 @@ public class DamageBox : MonoBehaviour
             {
                 playerHealth.DamagePlayer(damage);
                 canDamage = false;
+                blood.SetActive(true);
             }
             if(canDamage == false)
             {
                 yield return new WaitForSeconds(1);
                 canDamage = true;
+                blood.SetActive(false);
             }
         }
     }

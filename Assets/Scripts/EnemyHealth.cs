@@ -13,6 +13,7 @@ public class EnemyHealth : MonoBehaviour
     public Animator bossLoad;
     public bool isBoss;
     public Enemy enemyScript;
+
     
 
     void Start()
@@ -29,10 +30,10 @@ public class EnemyHealth : MonoBehaviour
     public void takeDamage(int damage)
     {
         currentHealth -= damage;
-
         if (currentHealth <= 0f)
         {
-            if(isBoss){
+            score.AddScore(1);
+            if(isBoss == true){
                 bossAnim.SetInteger("MoveState", 6);
                 enemyScript.isDead = true;
                 Invoke("finalImage", 5);
@@ -40,7 +41,6 @@ public class EnemyHealth : MonoBehaviour
             {
                 theEnemy.SetActive(false);
                 damageBox.SetActive(false);
-                score.AddScore(1);
             }
 
         }

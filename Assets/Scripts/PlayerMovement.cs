@@ -36,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
         //enemyTag = GameObject.FindGameObjectsWithTag("enemy");
         playerHealth = gameObject.GetComponent<Health>();
         timer = timeBetweenLock;
-        Debug.Log(enemyTag);
         speed = baseSpeed;
         canHeal = true;
         currentStamina = startingStamina;
@@ -354,5 +353,6 @@ public class PlayerMovement : MonoBehaviour
         healBool = false;
         canMove = false;
     }
+
 
 }

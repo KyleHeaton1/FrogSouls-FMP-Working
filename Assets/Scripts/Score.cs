@@ -9,25 +9,20 @@ public class Score : MonoBehaviour
     public int currentScore = 0;
     public GameObject finishBox;
     public Text scoreText;
-    public bool isBoss;
 
     bool finished = false;
 
     void Update()
     {
-        if(currentScore >= requiredScore && !isBoss)
+        if(currentScore >= requiredScore)
         {
             finished = true;
             finishBox.SetActive(true);
             scoreText.text = "Get to the end of the level";
         }
-        if(!finished && !isBoss)
+        if(!finished)
         {
             scoreText.text = "Defeat enemies: " + currentScore + "/" + requiredScore;
-        }
-        if(isBoss)
-        {
-            scoreText.text = "defeat john";
         }
         
     }

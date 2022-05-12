@@ -9,7 +9,8 @@ public class Enemy : MonoBehaviour
     public float speed, agroDistance, chaseSpeed;
     private Quaternion _lookRotation;
     Rigidbody rb;
-    public GameObject player, damageBox, weapon, weapon2, damageBox2;
+    public GameObject player, damageBox;
+    public GameObject[] weapons;
     bool startState, startAgroState;
     public Animator anim;
     float baseSpeed = 10;
@@ -17,9 +18,7 @@ public class Enemy : MonoBehaviour
     public float distanceOfPlayer = 4;
 
     [HideInInspector] public bool isDead = false;
-
     int randomNumber;
-
     enum States
     {
         Idle,
@@ -31,7 +30,6 @@ public class Enemy : MonoBehaviour
     }
 
     States state;
-
     float x;
     float y;
     float z;
@@ -44,7 +42,6 @@ public class Enemy : MonoBehaviour
         nextStateTimer = 2;
         rb = GetComponent<Rigidbody>();
     }
-
     // Update is called once per frame
     void LateUpdate()
     { 
@@ -53,7 +50,6 @@ public class Enemy : MonoBehaviour
     // State logic - switch states depending on what logic we want to apply
     void ProcessStates()
     {
-
         if(!isDead)
         {
         nextStateTimer -= Time.deltaTime;
@@ -82,7 +78,6 @@ public class Enemy : MonoBehaviour
                     speed *= chaseSpeed;
                 }
             }
-
             if(state == States.Attack)
             {
                 Attack();
@@ -94,7 +89,6 @@ public class Enemy : MonoBehaviour
                     speed = baseSpeed;
                 }
             }
-
             if(state == States.Breathe)
             {
                 Breathe();
@@ -105,17 +99,14 @@ public class Enemy : MonoBehaviour
                     speed = baseSpeed;
                 }
             }
-
         }else
         {
             startAgroState = false;
-
             if(!startState)
             {
                 state = States.Idle;
                 startState = true;
             }
-
             //the regular states for when an enemy is waiting for the player
             if(state == States.Idle)
             {
@@ -128,7 +119,6 @@ public class Enemy : MonoBehaviour
                     speed = baseSpeed;
                 }
             }
-
             if(state == States.Turn)
             {
 
@@ -141,7 +131,6 @@ public class Enemy : MonoBehaviour
                 }
 
             }
-
             if(state == States.Walk)
             {
                 if( nextStateTimer < 0 )
@@ -154,13 +143,8 @@ public class Enemy : MonoBehaviour
                 Walk();
             }
         }
-
-
-
         }
-
     }
-
     // Different AI Update methods
     void Idle()
     {
@@ -177,7 +161,6 @@ public class Enemy : MonoBehaviour
     {
         anim.SetInteger("MoveState", 0);
         stateText = "Turn";
-        //transform.LookAt(pos);
         _lookRotation = Quaternion.LookRotation(pos);
         transform.rotation = Quaternion.Slerp(transform.rotation, _lookRotation, Time.deltaTime * 4);
         
@@ -185,26 +168,13 @@ public class Enemy : MonoBehaviour
 
     void Walk()
     {
-        //anim.SetBool("isRun", true);
-
-        //THIS IS FOR JOKES DELETE THIS FOR LATER LOL
-        /*
-        int randomNumber = Random.Range(1, 3);
-        if(randomNumber == 1){
-            FindObjectOfType<SoundManager>().Play("Click2");
-            anim.SetBool("isFlip", true);
-        }
-        else{
-            anim.SetBool("isRun", true);
-            Debug.Log(randomNumber);
-        }
-        */
         anim.SetInteger("MoveState", 1);
-
-
         stateText = "Walk";
-        //transform.position = Vector3.MoveTowards(transform.position, pos, speed* Time.deltaTime);
         rb.velocity = pos;
+        foreach(GameObject enemyWeapon in weapons)
+        {
+            enemyWeapon.SetActive(false);
+        }
     }
 
     void Chase()
@@ -214,9 +184,10 @@ public class Enemy : MonoBehaviour
         anim.SetInteger("MoveState", 2);
         if (isGecko)
         {
-            weapon.SetActive(false);
-            weapon2.SetActive(false);
-            damageBox2.SetActive(false);
+            foreach(GameObject enemyWeapon in weapons)
+            {
+                enemyWeapon.SetActive(false);
+            }
         }
         randomNumber = Random.Range(1, 3);
     }
@@ -226,9 +197,10 @@ public class Enemy : MonoBehaviour
         damageBox.SetActive(true);
         if (isGecko)
         {
-            weapon.SetActive(true);
-            weapon2.SetActive(true);
-            damageBox2.SetActive(true);
+            foreach(GameObject enemyWeapon in weapons)
+            {
+                enemyWeapon.SetActive(true);
+            }
         }
         if(isBoss)
         {
@@ -263,13 +235,13 @@ public class Enemy : MonoBehaviour
         }
         if(isGecko)
         {
-            weapon.SetActive(false);
-            weapon2.SetActive(false);
-            damageBox2.SetActive(false);
+            foreach(GameObject enemyWeapon in weapons)
+            {
+                enemyWeapon.SetActive(false);
+            }
         }
 
     }
-
     void OnCollisionEnter(Collision other) 
     {
         if(other.gameObject.tag == "Player")
@@ -277,6 +249,4 @@ public class Enemy : MonoBehaviour
             rb.velocity = Vector3.zero;
         }
     }
-
-
 }

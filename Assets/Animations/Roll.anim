@@ -86734,18 +86734,4 @@ AnimationClip:
     script: {fileID: 0}
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 1
-    functionName: EndRoll
-    data: 
-    objectReferenceParameter: {fileID: 7835578097675988709, guid: bb2da621864b49743b23066811024f1f, type: 3}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 1.0333333
-    functionName: Reclaim
-    data: 
-    objectReferenceParameter: {fileID: 11500000, guid: 2d3df9719e8b89e459970dea2f84b8d9, type: 3}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

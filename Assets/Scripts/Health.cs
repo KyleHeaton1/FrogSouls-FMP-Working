@@ -22,6 +22,7 @@ public class Health : MonoBehaviour
     bool close = false;
     public float timeForLoadScreen = 7;
     public Animator imageAnim;
+    public GameObject blood;
 
     // Start is called before the first frame update
     void Start()
@@ -62,10 +63,16 @@ public class Health : MonoBehaviour
     public void DamagePlayer(int damage)
     {
         currentHealth -= damage;
+        blood.SetActive(true);
+        Invoke("bleedWait", 1);
     }
     void LoadImage()
     {
         imageAnim.SetBool("load", true);
+    }
+    void bleedWait()
+    {
+        blood.SetActive(false);
     }
     void sceneLoad()
     {
