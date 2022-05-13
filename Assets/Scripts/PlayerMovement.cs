@@ -4,23 +4,31 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Assingment")]
+    [Space(5)]
+
     public CharacterController controller;
     int click = 0;
     public Animator anim;
     Vector3 playerDodge;
-    public GameObject targetUI, swordBoxCollider;
+    public GameObject targetUI, swordBoxCollider, healParticle;
     public Transform cam;
     public Cinemachine.CinemachineFreeLook lookCam;
-    public float  baseSpeed, sprintMultipler, attackSpeed, gravity, turnSmoothTime, timeBetweenLock, distanceFromLock, speed, healTime = 3f;
+    public Vector3 moveDir;
+    float AttackTime = 1, timeBetweenHeal = 1, staminaRefresh = 3;
+    public DamageBox damageBox;
+
+    [Header("Values")]
+    [Space(5)]
+    public float healTime = 3f;
+    public float baseSpeed, sprintMultipler, attackSpeed, gravity, turnSmoothTime, timeBetweenLock, distanceFromLock, speed;
+
     Vector3 velocity;
     GameObject[] enemyTag;
     GameObject currentEnemy;
     float turnSmoothVelocity, timer, dodgeTime;
     bool readyToLock, locked = false, sprinting = false, isMoving = false, readyToAttack = true, attackAnimOverride = false, canCombo = false, canCombo2 = false, canMove= true;
     bool canHeal = true, canSprint = true, canAttack = true, sprintState = false, healBool = true;
-    public Vector3 moveDir;
-    float AttackTime = 1, timeBetweenHeal = 1, staminaRefresh = 3;
-    public DamageBox damageBox;
     Health playerHealth;
     [HideInInspector] public bool canRoll = true, isTakingStamina = false, dead = false;
 
@@ -33,7 +41,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Start() 
     {
-        //enemyTag = GameObject.FindGameObjectsWithTag("enemy");
         playerHealth = gameObject.GetComponent<Health>();
         timer = timeBetweenLock;
         speed = baseSpeed;
@@ -79,11 +86,11 @@ public class PlayerMovement : MonoBehaviour
         //gravity
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
         //walk
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
-
 
         if (direction.magnitude >= 0.1f && canMove)
         {
@@ -132,6 +139,7 @@ public class PlayerMovement : MonoBehaviour
             speed = attackSpeed;
             Debug.Log("e");
             sprinting = false;
+            healParticle.SetActive(true);
 
             if (healTime <= 0 && canHeal)
             {
@@ -148,13 +156,13 @@ public class PlayerMovement : MonoBehaviour
             speed = baseSpeed;
             canHeal = true;
             currentStamina -= 45.5f;
+            healParticle.SetActive(false);
         }
         if(!canHeal)
         {
             StartCoroutine(HealWait());
         }
         
-
         //attacking
         if (Input.GetMouseButtonDown(0) && canAttack == true)
         {
@@ -187,9 +195,7 @@ public class PlayerMovement : MonoBehaviour
 
         staminaBar.SetStamina(currentStamina);
     }
-    
-    
-
+   
     void LockOn()
     {
        
@@ -219,7 +225,6 @@ public class PlayerMovement : MonoBehaviour
                 readyToLock = false;
                 locked = false;
             }
-        
         //lock on
         if(Input.GetKeyDown(KeyCode.E) && readyToLock)
         {
@@ -247,7 +252,6 @@ public class PlayerMovement : MonoBehaviour
             lookCam.m_LookAt = this.transform;
         }
     }
-
     IEnumerator HealWait()
     {
         yield return new WaitForSeconds(timeBetweenHeal);
@@ -258,13 +262,12 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator StaminaWait()
     {
         yield return new WaitForSeconds(5);
+        currentStamina = 100;
         canAttack = true;
         healBool = true;
         canSprint = true;
         canRoll = true;
-        currentStamina = 100;
     }
-
     IEnumerator Attack1()
     {
         readyToAttack = false;
@@ -287,7 +290,6 @@ public class PlayerMovement : MonoBehaviour
         isTakingStamina = false;
         readyToAttack = true;
     }
-
     IEnumerator Attack2()
     {
         canCombo = false;
@@ -310,7 +312,6 @@ public class PlayerMovement : MonoBehaviour
         isTakingStamina = false;
         readyToAttack = true;
     }
-
     IEnumerator Attack3()
     {
         damageBox.damage = 21;
@@ -335,7 +336,6 @@ public class PlayerMovement : MonoBehaviour
         readyToAttack = true;
         isTakingStamina = false;
     }
-
     void Reclaim()
     {
         swordBoxCollider.SetActive(false);
@@ -343,7 +343,6 @@ public class PlayerMovement : MonoBehaviour
         speed = baseSpeed;
         readyToAttack = true;
     }
-
     void Death()
     {
         anim.SetInteger("MoveState", 26);
@@ -353,6 +352,4 @@ public class PlayerMovement : MonoBehaviour
         healBool = false;
         canMove = false;
     }
-
-
 }

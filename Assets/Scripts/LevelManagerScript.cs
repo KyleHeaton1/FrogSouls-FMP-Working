@@ -42,4 +42,24 @@ public class LevelManagerScript : MonoBehaviour
     public void Load2(){
         SceneManager.LoadScene("SampleScene");
     }
+
+    public void Level1()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
+    public void Level2()
+    {
+        SceneManager.LoadScene("Level 2");
+    }
+
+    public void Level3()
+    {
+        SceneManager.LoadScene("Level 3");
+    }
+    public void FinalBoss()
+    {
+        SceneManager.LoadScene("Final Boss");
+    }
+
+
 }

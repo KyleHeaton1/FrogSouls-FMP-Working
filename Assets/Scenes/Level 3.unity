@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.5502471, g: 0.44256458, b: 0.2480416, a: 1}
+  m_IndirectSpecularColor: {r: 0.55024534, g: 0.44256344, b: 0.24804103, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: af794a8e9ef781e46bafaecb3aea1b08, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1586,8 +1586,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &81681378
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2403,8 +2404,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &107965615
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3170,8 +3172,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &159475804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4924,6 +4927,73 @@ Transform:
   m_Father: {fileID: 1310436425}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 29.215536, y: -0.13573247, z: -13.217652}
+--- !u!1001 &247406440
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 379133850}
+    m_Modifications:
+    - target: {fileID: 6133238870022623699, guid: 88a2f9e7cc2f19345995fdae17931844, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133238870022623699, guid: 88a2f9e7cc2f19345995fdae17931844, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133238870022623699, guid: 88a2f9e7cc2f19345995fdae17931844, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133238870022623699, guid: 88a2f9e7cc2f19345995fdae17931844, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133238870022623699, guid: 88a2f9e7cc2f19345995fdae17931844, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133238870022623699, guid: 88a2f9e7cc2f19345995fdae17931844, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133238870022623699, guid: 88a2f9e7cc2f19345995fdae17931844, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133238870022623699, guid: 88a2f9e7cc2f19345995fdae17931844, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133238870022623699, guid: 88a2f9e7cc2f19345995fdae17931844, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133238870022623699, guid: 88a2f9e7cc2f19345995fdae17931844, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133238870022623699, guid: 88a2f9e7cc2f19345995fdae17931844, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133238870022623700, guid: 88a2f9e7cc2f19345995fdae17931844, type: 3}
+      propertyPath: m_Name
+      value: HealParticle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 88a2f9e7cc2f19345995fdae17931844, type: 3}
+--- !u!4 &247406441 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6133238870022623699, guid: 88a2f9e7cc2f19345995fdae17931844, type: 3}
+  m_PrefabInstance: {fileID: 247406440}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &247406442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6133238870022623700, guid: 88a2f9e7cc2f19345995fdae17931844, type: 3}
+  m_PrefabInstance: {fileID: 247406440}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &247620827
 GameObject:
   m_ObjectHideFlags: 0
@@ -6878,8 +6948,10 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 607814913}
   theEnemy: {fileID: 313615396}
+  damageBox: {fileID: 0}
   score: {fileID: 507186462}
   bossAnim: {fileID: 0}
+  bossLoad: {fileID: 0}
   isBoss: 0
   enemyScript: {fileID: 0}
 --- !u!114 &313615400
@@ -6899,9 +6971,10 @@ MonoBehaviour:
   chaseSpeed: 13
   player: {fileID: 1949399380}
   damageBox: {fileID: 159475801}
-  weapon: {fileID: 592389802}
-  weapon2: {fileID: 807572162}
-  damageBox2: {fileID: 377118401}
+  weapons:
+  - {fileID: 807572162}
+  - {fileID: 592389802}
+  - {fileID: 377118401}
   anim: {fileID: 170194384}
   isBoss: 0
   isGecko: 1
@@ -8460,6 +8533,8 @@ Transform:
   - {fileID: 622138577}
   - {fileID: 4157030110797208798}
   - {fileID: 1949399381}
+  - {fileID: 247406441}
+  - {fileID: 980697935}
   m_Father: {fileID: 2663453407833176388}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8497,8 +8572,12 @@ MonoBehaviour:
   anim: {fileID: 3673649153505478245}
   targetUI: {fileID: 90842012}
   swordBoxCollider: {fileID: 7835578097478139424}
+  healParticle: {fileID: 247406442}
   cam: {fileID: 963194228}
   lookCam: {fileID: 2047939321}
+  moveDir: {x: 0, y: 0, z: 0}
+  damageBox: {fileID: 7835578097478139421}
+  healTime: 3
   baseSpeed: 7
   sprintMultipler: 2
   attackSpeed: 0.4
@@ -8507,9 +8586,6 @@ MonoBehaviour:
   timeBetweenLock: 0.5
   distanceFromLock: 20
   speed: 0
-  healTime: 3
-  moveDir: {x: 0, y: 0, z: 0}
-  damageBox: {fileID: 7835578097478139421}
   canRoll: 1
   isTakingStamina: 0
   dead: 0
@@ -8641,8 +8717,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &384559980
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9714,8 +9791,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &427759709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10299,8 +10377,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 4
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &450884187
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11588,13 +11667,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 731033552}
+  - {fileID: 1316972770}
   m_Father: {fileID: 1269730522}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -49, y: -102}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -96, y: -160}
+  m_SizeDelta: {x: 194, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &507186462
 MonoBehaviour:
@@ -11612,7 +11692,6 @@ MonoBehaviour:
   currentScore: 0
   finishBox: {fileID: 1454047365}
   scoreText: {fileID: 731033553}
-  isBoss: 0
 --- !u!1001 &508109261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12369,8 +12448,10 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 465240515}
   theEnemy: {fileID: 546800400}
+  damageBox: {fileID: 0}
   score: {fileID: 507186462}
   bossAnim: {fileID: 0}
+  bossLoad: {fileID: 0}
   isBoss: 0
   enemyScript: {fileID: 0}
 --- !u!114 &546800404
@@ -12390,9 +12471,10 @@ MonoBehaviour:
   chaseSpeed: 13
   player: {fileID: 1949399380}
   damageBox: {fileID: 816246930}
-  weapon: {fileID: 959524007}
-  weapon2: {fileID: 1523975387}
-  damageBox2: {fileID: 1709329164}
+  weapons:
+  - {fileID: 1523975387}
+  - {fileID: 959524007}
+  - {fileID: 1709329164}
   anim: {fileID: 1786454975}
   isBoss: 0
   isGecko: 1
@@ -13647,8 +13729,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &592389805
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13759,8 +13842,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 4
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &595743182
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14482,8 +14566,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &622794488
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15542,8 +15627,10 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 715993927}
   theEnemy: {fileID: 652153530}
+  damageBox: {fileID: 0}
   score: {fileID: 507186462}
   bossAnim: {fileID: 0}
+  bossLoad: {fileID: 0}
   isBoss: 0
   enemyScript: {fileID: 0}
 --- !u!114 &652153534
@@ -15563,9 +15650,10 @@ MonoBehaviour:
   chaseSpeed: 13
   player: {fileID: 1949399380}
   damageBox: {fileID: 1698383743}
-  weapon: {fileID: 450884184}
-  weapon2: {fileID: 692207908}
-  damageBox2: {fileID: 359930888}
+  weapons:
+  - {fileID: 692207908}
+  - {fileID: 450884184}
+  - {fileID: 359930888}
   anim: {fileID: 1226143704}
   isBoss: 0
   isGecko: 1
@@ -15902,8 +15990,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &663054605
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16457,8 +16546,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &679197508
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16714,8 +16804,10 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 430319310}
   theEnemy: {fileID: 686568973}
+  damageBox: {fileID: 0}
   score: {fileID: 507186462}
   bossAnim: {fileID: 0}
+  bossLoad: {fileID: 0}
   isBoss: 0
   enemyScript: {fileID: 0}
 --- !u!114 &686568977
@@ -16735,9 +16827,10 @@ MonoBehaviour:
   chaseSpeed: 13
   player: {fileID: 1949399380}
   damageBox: {fileID: 1385896889}
-  weapon: {fileID: 879438863}
-  weapon2: {fileID: 1600185688}
-  damageBox2: {fileID: 27026042}
+  weapons:
+  - {fileID: 1600185688}
+  - {fileID: 879438863}
+  - {fileID: 27026042}
   anim: {fileID: 1603739004}
   isBoss: 0
   isGecko: 1
@@ -17887,8 +17980,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -42.571598, y: 0}
-  m_SizeDelta: {x: 221.432, y: 100}
+  m_AnchoredPosition: {x: -39.47322, y: 0}
+  m_SizeDelta: {x: 272.9484, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &731033553
 MonoBehaviour:
@@ -17911,7 +18004,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8127efe01b7d4014ea9bd61eafcd7d4c, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -18568,8 +18661,10 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 223896993}
   theEnemy: {fileID: 758492853}
+  damageBox: {fileID: 0}
   score: {fileID: 507186462}
   bossAnim: {fileID: 0}
+  bossLoad: {fileID: 0}
   isBoss: 0
   enemyScript: {fileID: 0}
 --- !u!114 &758492857
@@ -18589,9 +18684,10 @@ MonoBehaviour:
   chaseSpeed: 13
   player: {fileID: 1949399380}
   damageBox: {fileID: 1249072292}
-  weapon: {fileID: 1664405640}
-  weapon2: {fileID: 1346955374}
-  damageBox2: {fileID: 1410953376}
+  weapons:
+  - {fileID: 1346955374}
+  - {fileID: 1664405640}
+  - {fileID: 1410953376}
   anim: {fileID: 411077539}
   isBoss: 0
   isGecko: 1
@@ -19415,8 +19511,10 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 1319795325}
   theEnemy: {fileID: 784782726}
+  damageBox: {fileID: 0}
   score: {fileID: 507186462}
   bossAnim: {fileID: 0}
+  bossLoad: {fileID: 0}
   isBoss: 0
   enemyScript: {fileID: 0}
 --- !u!114 &784782729
@@ -19436,9 +19534,10 @@ MonoBehaviour:
   chaseSpeed: 13
   player: {fileID: 1949399380}
   damageBox: {fileID: 2006574837}
-  weapon: {fileID: 595743179}
-  weapon2: {fileID: 1624719514}
-  damageBox2: {fileID: 404257942}
+  weapons:
+  - {fileID: 1624719514}
+  - {fileID: 404257942}
+  - {fileID: 595743179}
   anim: {fileID: 1113037425}
   isBoss: 0
   isGecko: 1
@@ -20005,8 +20104,10 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 1742337030}
   theEnemy: {fileID: 794333676}
+  damageBox: {fileID: 0}
   score: {fileID: 507186462}
   bossAnim: {fileID: 0}
+  bossLoad: {fileID: 0}
   isBoss: 0
   enemyScript: {fileID: 0}
 --- !u!114 &794333680
@@ -20026,9 +20127,10 @@ MonoBehaviour:
   chaseSpeed: 13
   player: {fileID: 1949399380}
   damageBox: {fileID: 427759706}
-  weapon: {fileID: 1062887262}
-  weapon2: {fileID: 1196259854}
-  damageBox2: {fileID: 1745224867}
+  weapons:
+  - {fileID: 1196259854}
+  - {fileID: 1062887262}
+  - {fileID: 1745224867}
   anim: {fileID: 2143407258}
   isBoss: 0
   isGecko: 1
@@ -21038,8 +21140,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &816246933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21952,8 +22055,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &843926773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23057,8 +23161,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &879438866
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23252,8 +23357,10 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 1051519191}
   theEnemy: {fileID: 883753194}
+  damageBox: {fileID: 0}
   score: {fileID: 507186462}
   bossAnim: {fileID: 0}
+  bossLoad: {fileID: 0}
   isBoss: 0
   enemyScript: {fileID: 0}
 --- !u!114 &883753198
@@ -23273,9 +23380,10 @@ MonoBehaviour:
   chaseSpeed: 13
   player: {fileID: 1949399380}
   damageBox: {fileID: 679197505}
-  weapon: {fileID: 622794485}
-  weapon2: {fileID: 85173627}
-  damageBox2: {fileID: 1912441973}
+  weapons:
+  - {fileID: 85173627}
+  - {fileID: 622794485}
+  - {fileID: 1912441973}
   anim: {fileID: 487769822}
   isBoss: 0
   isGecko: 1
@@ -24308,8 +24416,10 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 850278686}
   theEnemy: {fileID: 925332981}
+  damageBox: {fileID: 0}
   score: {fileID: 507186462}
   bossAnim: {fileID: 0}
+  bossLoad: {fileID: 0}
   isBoss: 0
   enemyScript: {fileID: 0}
 --- !u!114 &925332985
@@ -24329,9 +24439,10 @@ MonoBehaviour:
   chaseSpeed: 13
   player: {fileID: 1949399380}
   damageBox: {fileID: 107965612}
-  weapon: {fileID: 1940617228}
-  weapon2: {fileID: 1274755117}
-  damageBox2: {fileID: 1668613937}
+  weapons:
+  - {fileID: 1274755117}
+  - {fileID: 1940617228}
+  - {fileID: 1668613937}
   anim: {fileID: 1447843947}
   isBoss: 0
   isGecko: 1
@@ -25134,8 +25245,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &959524010
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25570,8 +25682,10 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 581073638}
   theEnemy: {fileID: 965402821}
+  damageBox: {fileID: 0}
   score: {fileID: 507186462}
   bossAnim: {fileID: 0}
+  bossLoad: {fileID: 0}
   isBoss: 0
   enemyScript: {fileID: 0}
 --- !u!114 &965402825
@@ -25591,9 +25705,10 @@ MonoBehaviour:
   chaseSpeed: 13
   player: {fileID: 1949399380}
   damageBox: {fileID: 1395468167}
-  weapon: {fileID: 81681375}
-  weapon2: {fileID: 1190929152}
-  damageBox2: {fileID: 2103103553}
+  weapons:
+  - {fileID: 1190929152}
+  - {fileID: 81681375}
+  - {fileID: 2103103553}
   anim: {fileID: 175105694}
   isBoss: 0
   isGecko: 1
@@ -25917,8 +26032,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &974188592
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26044,6 +26160,73 @@ Transform:
   m_Father: {fileID: 1148053171}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 24.367613, y: -8.034915, z: -36.037956}
+--- !u!1001 &980697934
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 379133850}
+    m_Modifications:
+    - target: {fileID: 756989151743659100, guid: 08207faf415884b4b87690025232035e, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 756989151743659100, guid: 08207faf415884b4b87690025232035e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.155
+      objectReference: {fileID: 0}
+    - target: {fileID: 756989151743659100, guid: 08207faf415884b4b87690025232035e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5302615
+      objectReference: {fileID: 0}
+    - target: {fileID: 756989151743659100, guid: 08207faf415884b4b87690025232035e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 756989151743659100, guid: 08207faf415884b4b87690025232035e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7231088
+      objectReference: {fileID: 0}
+    - target: {fileID: 756989151743659100, guid: 08207faf415884b4b87690025232035e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 756989151743659100, guid: 08207faf415884b4b87690025232035e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6907341
+      objectReference: {fileID: 0}
+    - target: {fileID: 756989151743659100, guid: 08207faf415884b4b87690025232035e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 756989151743659100, guid: 08207faf415884b4b87690025232035e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 756989151743659100, guid: 08207faf415884b4b87690025232035e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -87.376
+      objectReference: {fileID: 0}
+    - target: {fileID: 756989151743659100, guid: 08207faf415884b4b87690025232035e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 756989151743955960, guid: 08207faf415884b4b87690025232035e, type: 3}
+      propertyPath: m_Name
+      value: FX_BloodSplatter
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 08207faf415884b4b87690025232035e, type: 3}
+--- !u!4 &980697935 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 756989151743659100, guid: 08207faf415884b4b87690025232035e, type: 3}
+  m_PrefabInstance: {fileID: 980697934}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &980697936 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 756989151743955960, guid: 08207faf415884b4b87690025232035e, type: 3}
+  m_PrefabInstance: {fileID: 980697934}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &980866810
 GameObject:
   m_ObjectHideFlags: 0
@@ -28276,7 +28459,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9238477, y: 1}
+    m_SensorSize: {x: 1.1813664, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -28616,8 +28799,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &1062887265
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33573,7 +33757,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9238477, y: 1}
+    m_SensorSize: {x: 1.1813664, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -34199,8 +34383,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 4
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &1249072295
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35079,6 +35264,7 @@ RectTransform:
   - {fileID: 507186461}
   - {fileID: 892683577331649142}
   - {fileID: 1209867733}
+  - {fileID: 1598666394}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36349,8 +36535,10 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 1917376553}
   theEnemy: {fileID: 1312056526}
+  damageBox: {fileID: 0}
   score: {fileID: 507186462}
   bossAnim: {fileID: 0}
+  bossLoad: {fileID: 0}
   isBoss: 0
   enemyScript: {fileID: 0}
 --- !u!114 &1312056530
@@ -36370,9 +36558,10 @@ MonoBehaviour:
   chaseSpeed: 13
   player: {fileID: 1949399380}
   damageBox: {fileID: 843926770}
-  weapon: {fileID: 2028270872}
-  weapon2: {fileID: 760511717}
-  damageBox2: {fileID: 243854677}
+  weapons:
+  - {fileID: 760511717}
+  - {fileID: 2028270872}
+  - {fileID: 243854677}
   anim: {fileID: 1340379903}
   isBoss: 0
   isGecko: 1
@@ -36475,6 +36664,85 @@ Transform:
   m_Father: {fileID: 625199447}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1316972769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1316972770}
+  - component: {fileID: 1316972772}
+  - component: {fileID: 1316972771}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1316972770
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316972769}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 507186461}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -55.206913, y: 21}
+  m_SizeDelta: {x: 241.4779, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1316972771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316972769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8127efe01b7d4014ea9bd61eafcd7d4c, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Current Objective:'
+--- !u!222 &1316972772
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316972769}
+  m_CullTransparentMesh: 1
 --- !u!1 &1317295219
 GameObject:
   m_ObjectHideFlags: 0
@@ -38159,8 +38427,10 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 981415053}
   theEnemy: {fileID: 1382372593}
+  damageBox: {fileID: 0}
   score: {fileID: 507186462}
   bossAnim: {fileID: 0}
+  bossLoad: {fileID: 0}
   isBoss: 0
   enemyScript: {fileID: 0}
 --- !u!114 &1382372597
@@ -38180,9 +38450,10 @@ MonoBehaviour:
   chaseSpeed: 13
   player: {fileID: 1949399380}
   damageBox: {fileID: 1742551772}
-  weapon: {fileID: 1995398809}
-  weapon2: {fileID: 95561782}
-  damageBox2: {fileID: 1531781906}
+  weapons:
+  - {fileID: 95561782}
+  - {fileID: 1995398809}
+  - {fileID: 1531781906}
   anim: {fileID: 2054402012}
   isBoss: 0
   isGecko: 1
@@ -38415,8 +38686,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &1385896892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38588,8 +38860,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &1395468170
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39251,8 +39524,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &1415520765
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43599,6 +43873,132 @@ Transform:
   m_Father: {fileID: 889398438}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1598666393
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1269730522}
+    m_Modifications:
+    - target: {fileID: 8897918635484018053, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 3fda6d3d0d23de04a83426ca89b6b88d, type: 2}
+    - target: {fileID: 8897918635484018053, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918636682280859, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 3fda6d3d0d23de04a83426ca89b6b88d, type: 2}
+    - target: {fileID: 8897918636682280859, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -1034
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -584
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637138450783, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_Name
+      value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897918637173790193, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 3fda6d3d0d23de04a83426ca89b6b88d, type: 2}
+    - target: {fileID: 8897918637173790193, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+--- !u!224 &1598666394 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8897918637138450782, guid: 837da20f7f6c55843a7d85b4fe4c7d9b, type: 3}
+  m_PrefabInstance: {fileID: 1598666393}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1598691278
 GameObject:
   m_ObjectHideFlags: 0
@@ -44158,7 +44558,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9238477, y: 1}
+    m_SensorSize: {x: 1.1813664, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -45513,8 +45913,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 4
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &1664405643
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46692,8 +47093,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 4
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &1698383746
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48468,8 +48870,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &1742551775
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49702,8 +50105,10 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 1705736045}
   theEnemy: {fileID: 1797190626}
+  damageBox: {fileID: 0}
   score: {fileID: 507186462}
   bossAnim: {fileID: 0}
+  bossLoad: {fileID: 0}
   isBoss: 0
   enemyScript: {fileID: 0}
 --- !u!114 &1797190630
@@ -49723,9 +50128,10 @@ MonoBehaviour:
   chaseSpeed: 13
   player: {fileID: 1949399380}
   damageBox: {fileID: 663054602}
-  weapon: {fileID: 384559977}
-  weapon2: {fileID: 1573672334}
-  damageBox2: {fileID: 1741409249}
+  weapons:
+  - {fileID: 1573672334}
+  - {fileID: 384559977}
+  - {fileID: 1741409249}
   anim: {fileID: 1885975409}
   isBoss: 0
   isGecko: 1
@@ -53013,8 +53419,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &1940617231
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55179,8 +55586,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &1995398812
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55479,8 +55887,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 4
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &2006574840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55923,8 +56332,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 6
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!65 &2028270875
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56341,7 +56751,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9238477, y: 1}
+    m_SensorSize: {x: 1.1813664, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -57981,8 +58391,10 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 1952606432}
   theEnemy: {fileID: 2092733927}
+  damageBox: {fileID: 0}
   score: {fileID: 507186462}
   bossAnim: {fileID: 0}
+  bossLoad: {fileID: 0}
   isBoss: 0
   enemyScript: {fileID: 0}
 --- !u!114 &2092733931
@@ -58002,9 +58414,10 @@ MonoBehaviour:
   chaseSpeed: 13
   player: {fileID: 1949399380}
   damageBox: {fileID: 1415520762}
-  weapon: {fileID: 974188589}
-  weapon2: {fileID: 1992488888}
-  damageBox2: {fileID: 1599701071}
+  weapons:
+  - {fileID: 1992488888}
+  - {fileID: 974188589}
+  - {fileID: 1599701071}
   anim: {fileID: 1140212073}
   isBoss: 0
   isGecko: 1
@@ -61604,8 +62017,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 4
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!33 &4100718999307518088
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -62002,8 +62416,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 4
+  damage: 2
   boxTimeRefresh: 0.9
+  blood: {fileID: 0}
 --- !u!4 &4100719001170672497
 Transform:
   m_ObjectHideFlags: 0
@@ -64364,6 +64779,7 @@ MonoBehaviour:
   deathScreen: {fileID: 926312480}
   timeForLoadScreen: 7
   imageAnim: {fileID: 1209867734}
+  blood: {fileID: 980697936}
 --- !u!33 &7835578097478139420
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -64387,6 +64803,7 @@ MonoBehaviour:
   isPlayer: 1
   damage: 17
   boxTimeRefresh: 0.2
+  blood: {fileID: 0}
 --- !u!1 &7835578097478139424
 GameObject:
   m_ObjectHideFlags: 0
@@ -64651,8 +65068,10 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 7943883302058973088}
   theEnemy: {fileID: 7943883301292918324}
+  damageBox: {fileID: 0}
   score: {fileID: 507186462}
   bossAnim: {fileID: 0}
+  bossLoad: {fileID: 0}
   isBoss: 0
   enemyScript: {fileID: 0}
 --- !u!114 &7943883301292918326
@@ -64672,9 +65091,10 @@ MonoBehaviour:
   chaseSpeed: 13
   player: {fileID: 1949399380}
   damageBox: {fileID: 4100719001170672270}
-  weapon: {fileID: 4100718999307518085}
-  weapon2: {fileID: 4100718999524414716}
-  damageBox2: {fileID: 4100718999636149591}
+  weapons:
+  - {fileID: 4100718999524414716}
+  - {fileID: 4100718999307518085}
+  - {fileID: 4100718999636149591}
   anim: {fileID: 2925225595895697184}
   isBoss: 0
   isGecko: 1
