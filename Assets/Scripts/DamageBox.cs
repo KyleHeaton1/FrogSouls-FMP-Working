@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class DamageBox : MonoBehaviour
 {
-    public bool isPlayer;
+    public bool isPlayer, isBoss;
     bool canDamage = true;
     EnemyHealth enemyHealth;
     Health playerHealth;
+    BossHealth bossHealth;
     public int damage;
     public float boxTimeRefresh;
-    public GameObject blood;
 
     void OnTriggerEnter(Collider other) 
     {
@@ -21,8 +21,16 @@ public class DamageBox : MonoBehaviour
         }
         if(other.tag == "enemy")
         {
-            enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
-            StartCoroutine(damagePass(true));
+            if(!isBoss)
+            {
+                enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
+                StartCoroutine(damagePass(true));    
+            }else
+            {
+                bossHealth = other.gameObject.GetComponent<BossHealth>();
+                StartCoroutine(damagePass(true));    
+
+            }
         }
     }
 
@@ -35,8 +43,15 @@ public class DamageBox : MonoBehaviour
         }
         if(other.tag == "enemy")
         {
-            enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
-            StartCoroutine(damagePass(true));
+            if(!isBoss)
+            {
+                enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
+                StartCoroutine(damagePass(true));    
+            }else
+            {
+                bossHealth = other.gameObject.GetComponent<BossHealth>();
+                StartCoroutine(damagePass(true));    
+            }
         }
     }
     
@@ -46,6 +61,11 @@ public class DamageBox : MonoBehaviour
         {
             if(canDamage)
             {
+                if(isBoss)
+                {
+                    bossHealth.takeDamage(damage);
+                    canDamage = false;
+                }
                 enemyHealth.takeDamage(damage);
                 canDamage = false;
             }
@@ -60,13 +80,11 @@ public class DamageBox : MonoBehaviour
             {
                 playerHealth.DamagePlayer(damage);
                 canDamage = false;
-                blood.SetActive(true);
             }
             if(canDamage == false)
             {
                 yield return new WaitForSeconds(1);
                 canDamage = true;
-                blood.SetActive(false);
             }
         }
     }

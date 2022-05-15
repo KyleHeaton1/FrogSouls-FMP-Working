@@ -2069,9 +2069,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 70
   boxTimeRefresh: 0.3
-  blood: {fileID: 0}
 --- !u!65 &779542387
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3137,7 +3137,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2385919, y: 1}
+    m_SensorSize: {x: 1.770903, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3952,7 +3952,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2385919, y: 1}
+    m_SensorSize: {x: 1.770903, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3968,7 +3968,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235722130}
-  m_LocalRotation: {x: 0.14253858, y: 0.000000008515345, z: -0.0000000012262865, w: 0.98978925}
+  m_LocalRotation: {x: 0.14253858, y: -0.000000008515345, z: 0.0000000012262865, w: 0.98978925}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4830,7 +4830,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2385919, y: 1}
+    m_SensorSize: {x: 1.770903, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6131,7 +6131,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2385919, y: 1}
+    m_SensorSize: {x: 1.770903, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -25380,9 +25380,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  damage: 17
+  isBoss: 1
+  damage: 23
   boxTimeRefresh: 0.2
-  blood: {fileID: 0}
 --- !u!1 &7835578097478139424
 GameObject:
   m_ObjectHideFlags: 0
@@ -27233,9 +27233,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 70
   boxTimeRefresh: 0.4
-  blood: {fileID: 0}
 --- !u!33 &8627526989604858846
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -27339,7 +27339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0668ea66bb505b647a3bc1e098c5eaa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 500
+  startingHealth: 575
   currentHealth: 0
   healthBar: {fileID: 7970355524093480296}
   theEnemy: {fileID: 8627526989980946692}

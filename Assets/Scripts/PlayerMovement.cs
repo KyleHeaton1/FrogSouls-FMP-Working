@@ -314,7 +314,7 @@ public class PlayerMovement : MonoBehaviour
     }
     IEnumerator Attack3()
     {
-        damageBox.damage = 21;
+        damageBox.damage = 26;
         canCombo2 = false;
         canCombo = false;
         readyToAttack = false;
