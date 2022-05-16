@@ -1665,9 +1665,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 70
   boxTimeRefresh: 0.3
-  blood: {fileID: 0}
 --- !u!65 &779542387
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4554,10 +4554,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Credits:\n\njohn - john\n\nProgramming - not brackeys ( i did it)\n\nModels
-    - i made them in the worst software ever\n\nbased on a true story\n\nExternal
-    assets\n\nLow Poly Tree Pack\n\nPolygonal's Low-Poly Particle Pack\n\nSimple
-    FX - Cartoon Particles\n\nSimple Low Poly Nature Pack\n\nAnimations\n\nMixamo
+  m_text: "Credits:\n\njohn - john\n\nkristiona koenmepton - musikoc\n\nProgramming
+    - not brackeys ( i did it)\n\nModels - i made them in the worst software ever\n\nbased
+    on a true story\n\nExternal assets\n\nLow Poly Tree Pack\n\nPolygonal's Low-Poly
+    Particle Pack\n\nSimple FX - Cartoon Particles\n\nSimple Low Poly Nature Pack\n\nAnimations\n\nMixamo
     https://www.mixamo.com\r\nEmpowering creativity with animated 3D characters.\n\nBlender
     - Blender.org\n\nThis game was made in Unity if you couldnt tell\n\nPre-Order
     keyboard building simulator\n\ngoogle classroom\n\ni dont know what else to write

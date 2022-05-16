@@ -1586,9 +1586,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &81681378
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2404,9 +2404,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &107965615
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3172,9 +3172,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &159475804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8717,9 +8717,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &384559980
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9791,9 +9791,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &427759709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10377,9 +10377,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &450884187
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13729,9 +13729,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &592389805
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13842,9 +13842,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 4
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &595743182
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14566,9 +14566,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &622794488
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15990,9 +15990,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &663054605
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16546,9 +16546,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &679197508
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21140,9 +21140,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &816246933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22055,9 +22055,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &843926773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23161,9 +23161,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &879438866
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25245,9 +25245,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &959524010
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26032,9 +26032,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &974188592
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28459,7 +28459,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.1813664, y: 1}
+    m_SensorSize: {x: 1.9499036, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -28799,9 +28799,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &1062887265
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33757,7 +33757,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.1813664, y: 1}
+    m_SensorSize: {x: 1.9499036, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -34383,9 +34383,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &1249072295
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38686,9 +38686,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &1385896892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38860,9 +38860,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &1395468170
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39524,9 +39524,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &1415520765
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44558,7 +44558,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.1813664, y: 1}
+    m_SensorSize: {x: 1.9499036, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -45913,9 +45913,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &1664405643
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47093,9 +47093,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &1698383746
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48870,9 +48870,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &1742551775
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53419,9 +53419,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &1940617231
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55586,9 +55586,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &1995398812
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55887,9 +55887,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 4
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &2006574840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56332,9 +56332,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!65 &2028270875
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56751,7 +56751,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.1813664, y: 1}
+    m_SensorSize: {x: 1.9499036, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -61871,6 +61871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4157030110797208798}
   - component: {fileID: 3673649153505478245}
+  - component: {fileID: 3673649153505478246}
   m_Layer: 0
   m_Name: Frog
   m_TagString: Untagged
@@ -61897,6 +61898,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3673649153505478246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3673649153505478244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d86f2f52f8265e84f95131625140f910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &3678676872890448369
 Transform:
   m_ObjectHideFlags: 0
@@ -62017,9 +62030,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!33 &4100718999307518088
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -62416,9 +62429,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   damage: 2
   boxTimeRefresh: 0.9
-  blood: {fileID: 0}
 --- !u!4 &4100719001170672497
 Transform:
   m_ObjectHideFlags: 0
@@ -64801,9 +64814,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  damage: 17
+  isBoss: 0
+  damage: 24
   boxTimeRefresh: 0.2
-  blood: {fileID: 0}
 --- !u!1 &7835578097478139424
 GameObject:
   m_ObjectHideFlags: 0

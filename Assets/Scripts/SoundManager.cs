@@ -4,6 +4,7 @@ using UnityEngine.Audio;
 using UnityEngine;
 using System;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class SoundManager : MonoBehaviour
     public AudioMixerGroup musicMixer;
     public AudioMixerGroup soundMixer;
     bool musicMute;
+
+
 
     public static SoundManager instance;
     // Start is called before the first frame update
@@ -57,6 +60,12 @@ public class SoundManager : MonoBehaviour
         }
         //this could be used to play music when a scene loads
         PlayMusic("Music1");
+
+
+        SceneManager.activeSceneChanged += ChangedActiveScene;
+
+
+
     }
 
     //this could be used to play music when a scene loads
@@ -104,6 +113,9 @@ public class SoundManager : MonoBehaviour
                 m.pitch = 1;
             }
         }
+
+
+      
     }
 
     public void ToggleMute()
@@ -117,4 +129,51 @@ public class SoundManager : MonoBehaviour
     //to edit volume from another script do
     //SoundManager manager = FindObjectOfType<SoundManager>();
     //audioMixer.SetFloat("BgmVolume", volume);
+
+
+    public void GetMusic()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        Debug.Log(scene.name);
+        if (scene.name == "MainMenu")
+        {
+            FindObjectOfType<SoundManager>().PlayMusic("Music1");
+        }
+        if (scene.name == "Level 1")
+        {
+            FindObjectOfType<SoundManager>().PlayMusic("Level1");
+        }
+        if (scene.name == "Level 2")
+        {
+            FindObjectOfType<SoundManager>().PlayMusic("Level2");
+        }
+        if (scene.name == "Level 3")
+        {
+            FindObjectOfType<SoundManager>().PlayMusic("Level3");
+        }
+        if (scene.name == "Final Boss")
+        {
+            FindObjectOfType<SoundManager>().PlayMusic("FinalBoss");
+        }
+        if (scene.name == "Credits")
+        {
+            FindObjectOfType<SoundManager>().PlayMusic("Credits");
+        }
+    }
+
+    private void ChangedActiveScene(Scene current, Scene next)
+    {
+        string currentName = current.name;
+        foreach(Sound m in music)
+        {
+            m.source.Stop();
+        }
+        if (currentName == null)
+        {
+            // Scene1 has been removed
+            currentName = "Replaced";
+        }
+        GetMusic();
+        Debug.Log("Scenes: " + currentName + ", " + next.name);
+    }
 }

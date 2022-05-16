@@ -47,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
         canHeal = true;
         currentStamina = startingStamina;
         staminaBar.SetMaxStamina(startingStamina);
+        Cursor.lockState = CursorLockMode.Locked;
     }
     void LateUpdate()
     {
@@ -314,7 +315,7 @@ public class PlayerMovement : MonoBehaviour
     }
     IEnumerator Attack3()
     {
-        damageBox.damage = 26;
+        damageBox.damage = 35;
         canCombo2 = false;
         canCombo = false;
         readyToAttack = false;

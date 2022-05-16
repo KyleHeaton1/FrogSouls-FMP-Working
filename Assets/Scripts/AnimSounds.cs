@@ -6,16 +6,24 @@ public class AnimSounds : MonoBehaviour
 {
     Animator anim;
 
-    public bool isGrass,isStone,isSwamp;
     void Start()
     {
         anim = GetComponent<Animator>();
     }
     public void FootStep1()
     {
-        if(isGrass)
-        {
-            FindObjectOfType<SoundManager>().Play("GrassFoot1");
-        }
+        FindObjectOfType<SoundManager>().Play("GrassFoot1");  
+    }
+    public void FootStep2()
+    {
+        FindObjectOfType<SoundManager>().Play("GrassFoot2");  
+    }
+    public void SWING()
+    {
+        FindObjectOfType<SoundManager>().Play("Swing");  
+    }
+    public void frog()
+    {
+        FindObjectOfType<SoundManager>().Play("frog");  
     }
 }

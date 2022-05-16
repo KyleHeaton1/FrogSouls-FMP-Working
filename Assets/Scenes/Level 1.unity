@@ -355,6 +355,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1615286132}
     m_Modifications:
+    - target: {fileID: 5982865228701755291, guid: eeeab45d0cd43fe438d9eca3962d7865, type: 3}
+      propertyPath: damage
+      value: 46
+      objectReference: {fileID: 0}
     - target: {fileID: 5982865229250929588, guid: eeeab45d0cd43fe438d9eca3962d7865, type: 3}
       propertyPath: cam
       value: 
@@ -550,6 +554,14 @@ PrefabInstance:
     - target: {fileID: 6358772073888198014, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358772074197148225, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
+      propertyPath: m_Name
+      value: tier 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358772074197148227, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
+      propertyPath: damage
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 6358772074256903791, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1106,6 +1118,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6358772074197148225, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
+      propertyPath: m_Name
+      value: tier 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358772074197148227, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
+      propertyPath: damage
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 6358772074256903791, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1517,6 +1537,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6358772074197148225, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
+      propertyPath: m_Name
+      value: tier 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358772074197148227, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
+      propertyPath: damage
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 6358772074256903791, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1597,6 +1625,14 @@ PrefabInstance:
     - target: {fileID: 6600236352151739755, guid: da75cd890c0de6b42b9c4071672817ad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600236353067219336, guid: da75cd890c0de6b42b9c4071672817ad, type: 3}
+      propertyPath: damage
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600236353067219338, guid: da75cd890c0de6b42b9c4071672817ad, type: 3}
+      propertyPath: m_Name
+      value: tier 2
       objectReference: {fileID: 0}
     - target: {fileID: 6600236353299632124, guid: da75cd890c0de6b42b9c4071672817ad, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3090,6 +3126,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6600236353067219336, guid: da75cd890c0de6b42b9c4071672817ad, type: 3}
+      propertyPath: damage
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600236353067219338, guid: da75cd890c0de6b42b9c4071672817ad, type: 3}
+      propertyPath: m_Name
+      value: tier 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6600236353299632124, guid: da75cd890c0de6b42b9c4071672817ad, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -3973,7 +4017,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.1813664, y: 1}
+    m_SensorSize: {x: 1.9499036, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4639,6 +4683,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6600236353067219336, guid: da75cd890c0de6b42b9c4071672817ad, type: 3}
+      propertyPath: damage
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600236353067219338, guid: da75cd890c0de6b42b9c4071672817ad, type: 3}
+      propertyPath: m_Name
+      value: tier 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6600236353299632124, guid: da75cd890c0de6b42b9c4071672817ad, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -4947,7 +4999,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.1813664, y: 1}
+    m_SensorSize: {x: 1.9499036, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -5252,6 +5304,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6358772074197148225, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
+      propertyPath: m_Name
+      value: tier 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358772074197148227, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
+      propertyPath: damage
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 6358772074256903791, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -5410,6 +5470,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1615286132}
     m_Modifications:
+    - target: {fileID: 5982865228701755291, guid: eeeab45d0cd43fe438d9eca3962d7865, type: 3}
+      propertyPath: damage
+      value: 46
+      objectReference: {fileID: 0}
     - target: {fileID: 5982865229250929588, guid: eeeab45d0cd43fe438d9eca3962d7865, type: 3}
       propertyPath: cam
       value: 
@@ -5939,6 +6003,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6358772074197148225, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
+      propertyPath: m_Name
+      value: tier 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358772074197148227, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
+      propertyPath: damage
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 6358772074256903791, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -6012,7 +6084,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.1813664, y: 1}
+    m_SensorSize: {x: 1.9499036, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6231,6 +6303,14 @@ PrefabInstance:
     - target: {fileID: 6600236352151739755, guid: da75cd890c0de6b42b9c4071672817ad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600236353067219336, guid: da75cd890c0de6b42b9c4071672817ad, type: 3}
+      propertyPath: damage
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600236353067219338, guid: da75cd890c0de6b42b9c4071672817ad, type: 3}
+      propertyPath: m_Name
+      value: tier 2
       objectReference: {fileID: 0}
     - target: {fileID: 6600236353299632124, guid: da75cd890c0de6b42b9c4071672817ad, type: 3}
       propertyPath: m_AnchorMax.x
@@ -6590,6 +6670,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6358772074197148225, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
+      propertyPath: m_Name
+      value: tier 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358772074197148227, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
+      propertyPath: damage
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 6358772074256903791, guid: 9bec93a7d3cefa64f900c3641b148437, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -6666,6 +6754,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1615286132}
     m_Modifications:
+    - target: {fileID: 5982865228701755291, guid: eeeab45d0cd43fe438d9eca3962d7865, type: 3}
+      propertyPath: damage
+      value: 46
+      objectReference: {fileID: 0}
     - target: {fileID: 5982865229250929588, guid: eeeab45d0cd43fe438d9eca3962d7865, type: 3}
       propertyPath: cam
       value: 
@@ -6802,7 +6894,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.1813664, y: 1}
+    m_SensorSize: {x: 1.9499036, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -9530,9 +9622,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  damage: 17
+  isBoss: 0
+  damage: 24
   boxTimeRefresh: 0.2
-  blood: {fileID: 0}
 --- !u!1 &7835578097478139424
 GameObject:
   m_ObjectHideFlags: 0
