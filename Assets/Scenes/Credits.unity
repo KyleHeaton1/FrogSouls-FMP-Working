@@ -3755,7 +3755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1849458086}
-  time: 20
+  time: 27
 --- !u!4 &1735873998
 Transform:
   m_ObjectHideFlags: 0
@@ -4512,8 +4512,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -276, y: -679}
-  m_SizeDelta: {x: 780, y: 1258.5437}
+  m_AnchoredPosition: {x: -355.8645, y: -679}
+  m_SizeDelta: {x: 1012.079, y: 1258.5437}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1871710692
 Animator:
@@ -4554,15 +4554,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Credits:\n\njohn - john\n\nkristiona koenmepton - musikoc\n\nProgramming
-    - not brackeys ( i did it)\n\nModels - i made them in the worst software ever\n\nbased
-    on a true story\n\nExternal assets\n\nLow Poly Tree Pack\n\nPolygonal's Low-Poly
-    Particle Pack\n\nSimple FX - Cartoon Particles\n\nSimple Low Poly Nature Pack\n\nAnimations\n\nMixamo
+  m_text: "Credits:\n\nmade by keyl hereotn\n\njohn - john\n\nkristiona koenmepton
+    - musikoc remeix\n\nalfei ricehrersd - fixeing coed\n\nProgramming - not brackeys
+    ( i did it)\n\nModels - i made them in the worst software ever\n\nbased on a
+    true story\n\nExternal assets\n\nLow Poly Tree Pack\n\nPolygonal's Low-Poly Particle
+    Pack\n\nSimple FX - Cartoon Particles\n\nSimple Low Poly Nature Pack\n\nMixamo
     https://www.mixamo.com\r\nEmpowering creativity with animated 3D characters.\n\nBlender
-    - Blender.org\n\nThis game was made in Unity if you couldnt tell\n\nPre-Order
-    keyboard building simulator\n\ngoogle classroom\n\ni dont know what else to write
-    about \n\n\n\n\n\n\nHelp me \n\n\n\n\nmr wilson has installed many viruses on
-    his 2002 laptop, god save him\n\npin number\n "
+    - Blender.org\n\nMusic Used:\n\nMedieval and Celtic Music | LANDS by Alex-Productions
+    | https://www.youtube.com/channel/UCx0_M61F81Nfb-BRXE-SeVA\n\nWe Three Celtic
+    Kings by Alexander Nakarada | https://www.serpentsoundstudios.com\r\n\nSurrounded
+    by Hayden Folker | https://soundcloud.com/hayden-folker\n\nMight & Magic by Alexander
+    Nakarada | https://www.serpentsoundstudios.com\n\nMedieval Fantasy by MaxKoMusic
+    | https://maxkomusic.com/\r\n\n\nMusic promoted by https://www.free-stock-music.com\r\nCreative
+    Commons Attribution-ShareAlike 3.0 Unported\r\nhttps://creativecommons.org/licenses/by-sa/3.0/deed.en_US\n\nAdditional
+    sounds from: https://www.videvo.net/\n\nHello David\n\nThis game was made in
+    Unity if you couldnt tell\n\nPre-Order keyboard building simulator\n\ngoogle
+    classroom\n\ni dont know what else to write about \n\n\nHelp me \n\n\nmr wilson
+    has installed many viruses on his 2002 laptop, god save him\n\npin number\n "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3fda6d3d0d23de04a83426ca89b6b88d, type: 2}
   m_sharedMaterial: {fileID: -2293392856096944718, guid: 3fda6d3d0d23de04a83426ca89b6b88d, type: 2}

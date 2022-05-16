@@ -145,7 +145,7 @@ public class PlayerMovement : MonoBehaviour
             if (healTime <= 0 && canHeal)
             {
                 Debug.Log("e");
-                playerHealth.HealPlayer(17);
+                playerHealth.HealPlayer(37);
                 canHeal = false;
                 healTime = 3f;
                 isTakingStamina = true;
@@ -170,17 +170,17 @@ public class PlayerMovement : MonoBehaviour
             if(readyToAttack == true)
             {
                StartCoroutine(Attack1());
-               currentStamina -= 10;
+               currentStamina -= 6;
             }
             if(canCombo == true)
             {
                 StartCoroutine(Attack2());
-                currentStamina -= 10;
+                currentStamina -= 6;
             }
             if(canCombo2 == true)
             {
                 StartCoroutine(Attack3());
-                currentStamina -= 10;
+                currentStamina -= 6;
             }
         }
 

@@ -107,10 +107,12 @@ public class SoundManager : MonoBehaviour
             if (musicMute)
             {
                 m.pitch = 0;
+                Debug.Log("soun");
             }
             else
             {
                 m.pitch = 1;
+                Debug.Log("soun");
             }
         }
 

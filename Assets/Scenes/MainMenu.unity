@@ -1440,8 +1440,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 243.78229, y: 180}
-  m_SizeDelta: {x: 989.011, y: 72.1498}
+  m_AnchoredPosition: {x: 243.78229, y: 182.04059}
+  m_SizeDelta: {x: 989.011, y: 65.8767}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &329782421
 MonoBehaviour:
@@ -1463,8 +1463,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Use W,S,A,D to move \nLeft Click to attack\nShift to sprint\nPress Q to
-    heal\nPress Space to roll\nESC to pause"
+  m_text: "Use W,S,A,D to move \nLeft Click to attack\nShift to sprint\nHold Q to
+    heal\nPress Space to roll\nPress E to lock on\nESC to pause"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3fda6d3d0d23de04a83426ca89b6b88d, type: 2}
   m_sharedMaterial: {fileID: -2293392856096944718, guid: 3fda6d3d0d23de04a83426ca89b6b88d, type: 2}
@@ -1491,8 +1491,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 58.7
-  m_fontSizeBase: 58.7
+  m_fontSize: 49.69
+  m_fontSizeBase: 49.69
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1703,7 +1703,7 @@ MonoBehaviour:
     m_Mode: 4
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 1403630021}
-    m_SelectOnDown: {fileID: 625099569}
+    m_SelectOnDown: {fileID: 7163740280422882652}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -3399,7 +3399,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &625099568
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6928,7 +6928,7 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 625099569}
+    m_SelectOnUp: {fileID: 1419327752}
     m_SelectOnDown: {fileID: 349696086}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
